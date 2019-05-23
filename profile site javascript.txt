@@ -1,0 +1,13 @@
+function addHobbie() {
+var hobbies = document.getElementById("hobbies");
+
+hobbies.innerHTML += "<input type='text' name='hobby'/>"
+}
+
+function submit() {
+var hobbyCollection = document.getElementsByName("hobby")
+var hobbyText = document.getElementById("hobbytext")
+for (var i = 0; i < hobbyCollection.length; i++) {
+hobbyText.innerHTML += hobbyCollection[i].value + "<br>";
+}
+}
